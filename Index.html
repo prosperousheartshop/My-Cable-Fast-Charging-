@@ -18,7 +18,7 @@
       text-align: center;
       margin-bottom: 20px;
     }
-    img {
+    img.main-image {
       display: block;
       max-width: 100%;
       border-radius: 12px;
@@ -55,13 +55,39 @@
       text-align: center;
       margin-top: 30px;
     }
+    /* Gallery styles */
+    .product-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+    .product-gallery img {
+      max-width: 150px;
+      border-radius: 12px;
+      box-shadow: 0 3px 6px rgb(0 0 0 / 0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .product-gallery img:hover {
+      transform: scale(1.1);
+    }
   </style>
 </head>
 <body>
 
   <h1>4 in 1 Mecha Fast Charging Data Cable — One Cable for All Your Devices!</h1>
   
-  <img src="https://example.com/your-cable-image.jpg" alt="4 in 1 Mecha Fast Charging Cable" />
+  <!-- Main Product Image -->
+  <img class="main-image" src="https://ae01.alicdn.com/kf/Sa2e04d8a071445b18f4e33dbf4df0e27e.jpg" alt="4 in 1 Mecha Fast Charging Cable" />
+  
+  <!-- Gallery of Additional Images -->
+  <div class="product-gallery">
+    <img src="https://ae01.alicdn.com/kf/Sd9b7f2b2c9c34b2a9c0a3e5b0f3e2e8b5.jpg" alt="4 in 1 Mecha Fast Charging Cable in Use" />
+    <img src="https://ae01.alicdn.com/kf/Sd8b7f2b2c9c34b2a9c0a3e5b0f3e2e8b5.jpg" alt="4 in 1 Mecha Fast Charging Cable Connectors" />
+    <img src="https://ae01.alicdn.com/kf/Sd7b7f2b2c9c34b2a9c0a3e5b0f3e2e8b5.jpg" alt="4 in 1 Mecha Fast Charging Cable Packaging" />
+  </div>
 
   <div class="product-details">
     <p>Upgrade your charging game with this <strong>4 in 1 Mecha Fast Charging Cable</strong> that supports the latest devices including iPhone 15, Samsung, Xiaomi, and more. Featuring super-fast charging speeds up to 65W and multiple connectors, this cable is built for power, durability, and convenience.</p>
@@ -75,7 +101,7 @@
       <li><strong>Perfect for travel:</strong> Compact and versatile — carry one cable for all your gadgets</li>
     </ul>
 
-    <a href="#" target="_blank" class="btn-buy">Buy Now & Charge Fast</a>
+    <a href="https://www.aliexpress.com/item/1005007293071742.html" target="_blank" rel="noopener" class="btn-buy">Buy Now & Charge Fast</a>
   </div>
 
   <p class="note">*Clicking the link will take you to the seller's site where you can complete your purchase securely.</p>
